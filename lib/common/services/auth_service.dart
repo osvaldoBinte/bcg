@@ -1,10 +1,6 @@
 import 'dart:convert';
+import 'package:bcg/common/constants/constants.dart';
 import 'package:get/get.dart';
-import 'package:tendria/common/constants/constants.dart';
-import 'package:tendria/features/auth/data/model/loginResponse/login_response_model.dart';
-import 'package:tendria/features/auth/domain/entities/response/login_response_entity.dart';
-import 'package:tendria/framework/preferences_service.dart';
-
 class AuthService extends GetxService {
   static final AuthService _instance = AuthService._internal();
   final PreferencesUser _prefsUser = PreferencesUser();
