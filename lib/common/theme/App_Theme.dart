@@ -6,36 +6,40 @@ class ThemeColor {
   // ===========================
   // COLORES PRINCIPALES - BCG
   // ===========================
-  static const Color primaryColor = Color(0xFF1A1A1A);       // Negro principal
-  static const Color secondaryColor = Color(0xFF2C2C2C);     // Negro secundario
-  static const Color tertiaryColor = Color(0xFF3D3D3D);      // Gris oscuro
+  static const Color primaryColor = Color(0xFF1A1A1A); // Negro principal
+  static const Color secondaryColor = Color(0xFF2C2C2C); // Negro secundario
+  static const Color tertiaryColor = Color(0xFF3F3F3F); // Gris oscuro
 
-  static const Color accentColor = Color(0xFFF5A623);        // Dorado/Amarillo BCG
-  static const Color accentDark = Color(0xFFD4891A);         // Dorado oscuro
+  static const Color accentColor = Color(0xFFF5A623); // Dorado/Amarillo BCG
+  static const Color accentDark = Color(0xFFD4891A); // Dorado oscuro
 
   // Colores de fondo
-  static const Color backgroundColor = Color(0xFFF5F5F5);   // Gris muy claro
+  static const Color backgroundColor = Color(0xFFF5F5F5); // Gris muy claro
   static const Color surfaceColor = Colors.white;
   static const Color cardColor = Colors.white;
   static final Color backgroundColorfondo = const Color(0xFFEEEEEE);
 
   // Colores de texto
-  static const Color textPrimaryColor = Color(0xFF1A1A1A);   // Negro
+  static const Color textPrimaryColor = Color(0xFF1A1A1A); // Negro
   static const Color textSecondaryColor = Color(0xFF757575); // Gris medio
-  static const Color textTertiaryColor = Color(0xFF9E9E9E);  // Gris claro
+  static const Color textTertiaryColor = Color(0xFF9E9E9E); // Gris claro
   static const Color textLightColor = Colors.white;
   static const Color textDarkColor = Color(0xFF1A1A1A);
 
   // Colores de estado
-  static const Color successColor = Color(0xFF4CAF50);       // Verde - PAGADO
-  static const Color warningColor = Color(0xFFF5A623);       // Amarillo - PENDIENTE
-  static const Color errorColor = Color(0xFFE53935);         // Rojo - ADEUDO
-  static const Color infoColor = Color(0xFF1565C0);          // Azul info
+  static const Color successColor = Color(0xFF4CAF50); // Verde - PAGADO
+  static const Color warningColor = Color(0xFFF5A623); // Amarillo - PENDIENTE
+  static const Color errorColor = Color(0xFFE53935); // Rojo - ADEUDO
+  static const Color infoColor = Color(0xFF1565C0); // Azul info
   static const Color onlineColor = Color(0xFF4CAF50);
 
   // Loading
-  static final Color loaddingwithOpacity1 = const Color(0xFFBDBDBD).withOpacity(0.15);
-  static final Color loaddingwithOpacity3 = const Color(0xFF9E9E9E).withOpacity(0.35);
+  static final Color loaddingwithOpacity1 = const Color(
+    0xFFBDBDBD,
+  ).withOpacity(0.15);
+  static final Color loaddingwithOpacity3 = const Color(
+    0xFF9E9E9E,
+  ).withOpacity(0.35);
   static final Color loadding = const Color(0xFF757575);
 
   // Colores específicos de la app
@@ -56,7 +60,7 @@ class ThemeColor {
   static const double smallRadius = 8.0;
   static const double mediumRadius = 12.0;
   static const double largeRadius = 16.0;
-  static const double extraLargeRadius = 20.0;
+  static const double extraLargeRadius = 40.0;
 
   static const double paddingSmall = 8.0;
   static const double paddingMedium = 16.0;
@@ -68,93 +72,97 @@ class ThemeColor {
   static const double elevationLarge = 8.0;
 
   // BorderRadius
-  static BorderRadius get smallBorderRadius => BorderRadius.circular(smallRadius);
-  static BorderRadius get mediumBorderRadius => BorderRadius.circular(mediumRadius);
-  static BorderRadius get largeBorderRadius => BorderRadius.circular(largeRadius);
-  static BorderRadius get extraLargeBorderRadius => BorderRadius.circular(extraLargeRadius);
+  static BorderRadius get smallBorderRadius =>
+      BorderRadius.circular(smallRadius);
+  static BorderRadius get mediumBorderRadius =>
+      BorderRadius.circular(mediumRadius);
+  static BorderRadius get largeBorderRadius =>
+      BorderRadius.circular(largeRadius);
+  static BorderRadius get extraLargeBorderRadius =>
+      BorderRadius.circular(extraLargeRadius);
   static BorderRadius get circularBorderRadius => BorderRadius.circular(100);
 
   // Sombras
   static BoxShadow get lightShadow => BoxShadow(
-        color: Colors.black.withOpacity(0.05),
-        blurRadius: 8,
-        offset: const Offset(0, 2),
-      );
+    color: Colors.black.withOpacity(0.05),
+    blurRadius: 8,
+    offset: const Offset(0, 2),
+  );
 
   static BoxShadow get mediumShadow => BoxShadow(
-        color: Colors.black.withOpacity(0.08),
-        blurRadius: 10,
-        offset: const Offset(0, 4),
-      );
+    color: Colors.black.withOpacity(0.08),
+    blurRadius: 10,
+    offset: const Offset(0, 4),
+  );
 
   static BoxShadow get darkShadow => BoxShadow(
-        color: Colors.black.withOpacity(0.15),
-        blurRadius: 12,
-        offset: const Offset(0, 6),
-      );
+    color: Colors.black.withOpacity(0.15),
+    blurRadius: 12,
+    offset: const Offset(0, 6),
+  );
 
   static BoxShadow get cardShadow => BoxShadow(
-        color: Colors.black.withOpacity(0.06),
-        blurRadius: 8,
-        offset: const Offset(0, 2),
-      );
+    color: Colors.black.withOpacity(0.06),
+    blurRadius: 8,
+    offset: const Offset(0, 2),
+  );
 
   // Gradientes
   static LinearGradient get primaryGradient => const LinearGradient(
-        colors: [primaryColor, secondaryColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
+    colors: [primaryColor, secondaryColor],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
 
   static LinearGradient get accentGradient => const LinearGradient(
-        colors: [accentColor, accentDark],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
+    colors: [accentColor, accentDark],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
 
   // Decoraciones
   static BoxDecoration get cardDecoration => BoxDecoration(
-        color: cardColor,
-        borderRadius: mediumBorderRadius,
-        boxShadow: [cardShadow],
-      );
+    color: cardColor,
+    borderRadius: mediumBorderRadius,
+    boxShadow: [cardShadow],
+  );
 
   static BoxDecoration get profileCardDecoration => BoxDecoration(
-        color: cardColor,
-        borderRadius: largeBorderRadius,
-        boxShadow: [cardShadow],
-      );
+    color: cardColor,
+    borderRadius: largeBorderRadius,
+    boxShadow: [cardShadow],
+  );
 
   // Estilos de texto
   static TextStyle get headingLarge => const TextStyle(
-        fontSize: 24,
-        fontWeight: FontWeight.bold,
-        color: textPrimaryColor,
-      );
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+    color: textPrimaryColor,
+  );
 
   static TextStyle get headingMedium => const TextStyle(
-        fontSize: 20,
-        fontWeight: FontWeight.w600,
-        color: textPrimaryColor,
-      );
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    color: textPrimaryColor,
+  );
 
   static TextStyle get headingSmall => const TextStyle(
-        fontSize: 18,
-        fontWeight: FontWeight.bold,
-        color: textPrimaryColor,
-      );
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: textPrimaryColor,
+  );
 
   static TextStyle get subtitleLarge => const TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.w600,
-        color: textPrimaryColor,
-      );
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: textPrimaryColor,
+  );
 
   static TextStyle get subtitleMedium => const TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.w500,
-        color: textPrimaryColor,
-      );
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: textPrimaryColor,
+  );
 
   static TextStyle get bodyLarge =>
       const TextStyle(fontSize: 16, color: textPrimaryColor);
@@ -169,115 +177,113 @@ class ThemeColor {
       const TextStyle(fontSize: 11, color: textSecondaryColor);
 
   static TextStyle get buttonText => const TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.w600,
-        color: textLightColor,
-      );
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
+    color: textLightColor,
+  );
 
   static TextStyle get badgeText => const TextStyle(
-        fontSize: 11,
-        fontWeight: FontWeight.w500,
-        color: textDarkColor,
-      );
+    fontSize: 11,
+    fontWeight: FontWeight.w500,
+    color: textDarkColor,
+  );
 
   // Theme Data
   static ThemeData get themeData => ThemeData(
-        useMaterial3: true,
-        brightness: Brightness.light,
-        primaryColor: primaryColor,
-        scaffoldBackgroundColor: backgroundColor,
+    useMaterial3: true,
+    brightness: Brightness.light,
+    primaryColor: primaryColor,
+    scaffoldBackgroundColor: backgroundColor,
 
-        colorScheme: ColorScheme.light(
-          primary: primaryColor,
-          onPrimary: textLightColor,
-          secondary: accentColor,
-          onSecondary: textDarkColor,
-          tertiary: tertiaryColor,
-          error: errorColor,
-          onError: textLightColor,
-          background: backgroundColor,
-          onBackground: textPrimaryColor,
-          surface: surfaceColor,
-          onSurface: textPrimaryColor,
-        ),
+    colorScheme: ColorScheme.light(
+      primary: primaryColor,
+      onPrimary: textLightColor,
+      secondary: accentColor,
+      onSecondary: textDarkColor,
+      tertiary: tertiaryColor,
+      error: errorColor,
+      onError: textLightColor,
+      background: backgroundColor,
+      onBackground: textPrimaryColor,
+      surface: surfaceColor,
+      onSurface: textPrimaryColor,
+    ),
 
-        appBarTheme: AppBarTheme(
-          backgroundColor: primaryColor,
-          foregroundColor: textLightColor,
-          elevation: 0,
-          iconTheme: const IconThemeData(color: Colors.white),
-          titleTextStyle: const TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w600,
-            color: Colors.white,
-          ),
-          systemOverlayStyle: SystemUiOverlayStyle.light,
-        ),
+    appBarTheme: AppBarTheme(
+      backgroundColor: primaryColor,
+      foregroundColor: textLightColor,
+      elevation: 0,
+      iconTheme: const IconThemeData(color: Colors.white),
+      titleTextStyle: const TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.w600,
+        color: Colors.white,
+      ),
+      systemOverlayStyle: SystemUiOverlayStyle.light,
+    ),
 
-        cardTheme: CardThemeData(
-          color: cardColor,
-          elevation: elevationSmall,
-          shadowColor: shadowColor,
-          shape: RoundedRectangleBorder(borderRadius: mediumBorderRadius),
-        ),
+    cardTheme: CardThemeData(
+      color: cardColor,
+      elevation: elevationSmall,
+      shadowColor: shadowColor,
+      shape: RoundedRectangleBorder(borderRadius: mediumBorderRadius),
+    ),
 
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: primaryColor,
-            foregroundColor: textLightColor,
-            shape: RoundedRectangleBorder(borderRadius: mediumBorderRadius),
-            padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
-            textStyle: buttonText,
-            elevation: elevationSmall,
-          ),
-        ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: primaryColor,
+        foregroundColor: textLightColor,
+        shape: RoundedRectangleBorder(borderRadius: mediumBorderRadius),
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+        textStyle: buttonText,
+        elevation: elevationSmall,
+      ),
+    ),
 
-        textButtonTheme: TextButtonThemeData(
-          style: TextButton.styleFrom(
-            foregroundColor: primaryColor,
-            textStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
-          ),
-        ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        foregroundColor: primaryColor,
+        textStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+      ),
+    ),
 
-        inputDecorationTheme: InputDecorationTheme(
-          filled: true,
-          fillColor: Colors.white,
-          contentPadding:
-              const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-          border: OutlineInputBorder(
-            borderRadius: mediumBorderRadius,
-            borderSide: BorderSide(color: Colors.grey.shade300),
-          ),
-          enabledBorder: OutlineInputBorder(
-            borderRadius: mediumBorderRadius,
-            borderSide: BorderSide(color: Colors.grey.shade300),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: mediumBorderRadius,
-            borderSide: const BorderSide(color: accentColor, width: 1.5),
-          ),
-          labelStyle: const TextStyle(color: textSecondaryColor),
-          hintStyle: const TextStyle(color: textSecondaryColor),
-        ),
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: Colors.white,
+      contentPadding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+      border: OutlineInputBorder(
+        borderRadius: mediumBorderRadius,
+        borderSide: BorderSide(color: Colors.grey.shade300),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: mediumBorderRadius,
+        borderSide: BorderSide(color: Colors.grey.shade300),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: mediumBorderRadius,
+        borderSide: const BorderSide(color: accentColor, width: 1.5),
+      ),
+      labelStyle: const TextStyle(color: textSecondaryColor),
+      hintStyle: const TextStyle(color: textSecondaryColor),
+    ),
 
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          backgroundColor: primaryColor,
-          selectedItemColor: accentColor,
-          unselectedItemColor: Colors.grey.shade500,
-          selectedLabelStyle: const TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.w500,
-          ),
-          unselectedLabelStyle: const TextStyle(fontSize: 12),
-          elevation: 8,
-          type: BottomNavigationBarType.fixed,
-        ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: primaryColor,
+      selectedItemColor: accentColor,
+      unselectedItemColor: Colors.grey.shade500,
+      selectedLabelStyle: const TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.w500,
+      ),
+      unselectedLabelStyle: const TextStyle(fontSize: 12),
+      elevation: 8,
+      type: BottomNavigationBarType.fixed,
+    ),
 
-        dividerTheme:
-            DividerThemeData(color: dividerColor, thickness: 1, space: 1),
+    dividerTheme: DividerThemeData(color: dividerColor, thickness: 1, space: 1),
 
-        iconTheme: const IconThemeData(color: textPrimaryColor, size: 24),
-      );
+    iconTheme: const IconThemeData(color: textPrimaryColor, size: 24),
+  );
 
   // ========================================
   // WIDGETS PERSONALIZADOS
@@ -407,7 +413,8 @@ class ThemeColor {
         onTap: isLoading ? null : finalOnPressed,
         child: Container(
           padding:
-              padding ?? const EdgeInsets.symmetric(horizontal: 13, vertical: 2),
+              padding ??
+              const EdgeInsets.symmetric(horizontal: 13, vertical: 2),
           decoration: BoxDecoration(
             color: isLoading
                 ? (backgroundColor ?? primaryColor).withOpacity(0.7)
@@ -461,7 +468,8 @@ class ThemeColor {
         onTap: isLoading ? null : onPressed,
         child: Container(
           padding:
-              padding ?? const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+              padding ??
+              const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
           decoration: BoxDecoration(
             gradient: accentGradient,
             borderRadius: BorderRadius.circular(borderRadius ?? 8),
@@ -480,8 +488,7 @@ class ThemeColor {
                     width: 20,
                     child: CircularProgressIndicator(
                       strokeWidth: 2,
-                      valueColor:
-                          AlwaysStoppedAnimation<Color>(textDarkColor),
+                      valueColor: AlwaysStoppedAnimation<Color>(textDarkColor),
                     ),
                   )
                 : Text(
@@ -556,8 +563,7 @@ class ThemeColor {
   }) {
     final Color bgColor = backgroundColor ?? primaryColor;
     final Color selectedColor = selectedItemColor ?? accentColor;
-    final Color unselectedColor =
-        unselectedItemColor ?? Colors.grey.shade500;
+    final Color unselectedColor = unselectedItemColor ?? Colors.grey.shade500;
 
     return Container(
       decoration: BoxDecoration(
@@ -582,7 +588,9 @@ class ThemeColor {
                 onTap: () => onTap(index),
                 child: Container(
                   padding: const EdgeInsets.symmetric(
-                      vertical: 6, horizontal: 16),
+                    vertical: 6,
+                    horizontal: 16,
+                  ),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -602,8 +610,7 @@ class ThemeColor {
                             fontWeight: isSelected
                                 ? FontWeight.w600
                                 : FontWeight.normal,
-                            color:
-                                isSelected ? selectedColor : unselectedColor,
+                            color: isSelected ? selectedColor : unselectedColor,
                           ),
                         ),
                       ],
@@ -618,7 +625,7 @@ class ThemeColor {
     );
   }
 
-  /// Widget reutilizable para campos de texto con label
+
   static Widget createLabeledTextField({
     required String label,
     required TextEditingController controller,
@@ -654,7 +661,8 @@ class ThemeColor {
           children: [
             Text(
               label,
-              style: labelStyle ??
+              style:
+                  labelStyle ??
                   bodyMedium.copyWith(
                     color: labelColor ?? textDarkColor,
                     fontWeight: FontWeight.w500,
@@ -681,21 +689,23 @@ class ThemeColor {
           onChanged: onChanged,
           enabled: enabled,
           maxLines: maxLines,
-          style: textStyle ??
+          style:
+              textStyle ??
               bodyMedium.copyWith(color: textColor ?? textDarkColor),
           decoration: InputDecoration(
             hintText: hintText,
-            hintStyle: hintStyle ??
-                bodyMedium.copyWith(
-                    color: hintColor ?? textSecondaryColor),
+            hintStyle:
+                hintStyle ??
+                bodyMedium.copyWith(color: hintColor ?? textSecondaryColor),
             errorText: showError ? errorText : null,
             errorStyle: bodySmall.copyWith(color: errorColor, height: 1.5),
             filled: true,
             fillColor: fillColor ?? surfaceColor,
-            contentPadding: contentPadding ??
+            contentPadding:
+                contentPadding ??
                 EdgeInsets.symmetric(
                   horizontal: paddingLarge,
-                  vertical: paddingMedium,
+                  vertical: paddingSmall,
                 ),
             suffixIcon: suffixIcon,
             border: OutlineInputBorder(
@@ -766,9 +776,7 @@ class ThemeColor {
                 children: [
                   Row(
                     children: [
-                      Expanded(
-                        child: Text(name, style: subtitleLarge),
-                      ),
+                      Expanded(child: Text(name, style: subtitleLarge)),
                       const SizedBox(width: 8),
                       createDistanceBadge('${distance.toInt()} km'),
                     ],
@@ -822,8 +830,7 @@ class ThemeColor {
                           overflow: TextOverflow.ellipsis,
                         ),
                       ),
-                      if (statusText != null)
-                        createStatusBadge(statusText),
+                      if (statusText != null) createStatusBadge(statusText),
                     ],
                   ),
                   const SizedBox(height: 4),
